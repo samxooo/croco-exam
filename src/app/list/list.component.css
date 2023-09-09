@@ -1,0 +1,68 @@
+.user-list {
+  text-align: center;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  white-space: nowrap;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f0f0f0;
+}
+
+.details-btn {
+  width: 120px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #32de84;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  transition-duration: 0.5s;
+  border: 1px solid #32de84;
+  background-color: #ffff;
+  color: #048341;
+}
+
+@media screen and (max-width: 767px) {
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  table {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  th, td {
+    display: block;
+    width: 100%;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  .details-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

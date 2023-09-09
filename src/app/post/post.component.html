@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="card">
+    <div class="title">
+      <h2>{{ selectedPost?.title }}</h2>
+    </div>
+    <div class="desc">
+      <p>
+        <ng-container *ngFor="let word of selectedPost?.body.split(' '); let odd = odd">
+          <span [style.font-weight]="odd ? 'bold' : 'normal'" [style.color]="odd ? 'red' : 'black'">{{ word }} </span>
+        </ng-container>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="table-content">
+  <table>
+    <thead>
+      <tr>
+        <th>სვეტი 1</th>
+        <th>სვეტი 2</th>
+        <th>სვეტი 3</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let todo of todos | slice:0:10">
+        <td>{{ todo.title }}</td>
+        <td>{{ todo.title }}</td>
+        <td>{{ todo.title }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

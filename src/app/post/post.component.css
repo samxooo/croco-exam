@@ -1,0 +1,80 @@
+.container {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+}
+
+.random-text {
+  font-weight: bold;
+  color: red;
+}
+
+
+.card {
+  border-radius: 10px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.table-content {
+  margin: 20px auto;
+  max-width: 80%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid green;
+}
+
+thead tr {
+  background-color: greenyellow;
+}
+
+thead th {
+  background-color: rgb(139, 209, 32);
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid green;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid green;
+}
+
+td {
+  border: 1px solid green;
+}
+
+tbody tr {
+  border: 1px solid green;
+}
+
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  .container {
+    width: 80%;
+  }
+
+  .table-content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+}
